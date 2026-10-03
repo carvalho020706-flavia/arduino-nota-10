@@ -1,0 +1,17 @@
+{
+  "demonstracao": true,
+  "titulo": "Visualizando variações com Arduino",
+  "resumo": "Girar um potenciômetro e observar a variação de uma função.",
+  "descricao": "[EXEMPLO FICTÍCIO] Girar um potenciômetro e observar a variação de uma função.",
+  "objetivo": "[SUBSTITUA] Descreva o objetivo de aprendizagem.",
+  "materiais": [
+    "Placa Arduino Uno",
+    "Protoboard",
+    "Jumpers",
+    "[SUBSTITUA pelos materiais reais]"
+  ],
+  "metodologia": [
+    "[SUBSTITUA] Passo 1",
+    "[SUBSTITUA] Passo 2"
+  ]
+}

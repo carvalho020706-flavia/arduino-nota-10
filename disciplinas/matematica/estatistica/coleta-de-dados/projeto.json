@@ -1,0 +1,17 @@
+{
+  "demonstracao": true,
+  "titulo": "Coleta de dados com sensores",
+  "resumo": "Registrar medidas e organizar em tabelas e médias.",
+  "descricao": "[EXEMPLO FICTÍCIO] Registrar medidas e organizar em tabelas e médias.",
+  "objetivo": "[SUBSTITUA] Descreva o objetivo de aprendizagem.",
+  "materiais": [
+    "Placa Arduino Uno",
+    "Protoboard",
+    "Jumpers",
+    "[SUBSTITUA pelos materiais reais]"
+  ],
+  "metodologia": [
+    "[SUBSTITUA] Passo 1",
+    "[SUBSTITUA] Passo 2"
+  ]
+}

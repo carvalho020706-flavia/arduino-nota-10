@@ -1,0 +1,17 @@
+{
+  "demonstracao": true,
+  "titulo": "Maquete interativa",
+  "resumo": "Maquete com LEDs que destacam pontos do patrimônio.",
+  "descricao": "[EXEMPLO FICTÍCIO] Maquete com LEDs que destacam pontos do patrimônio.",
+  "objetivo": "[SUBSTITUA] Descreva o objetivo de aprendizagem.",
+  "materiais": [
+    "Placa Arduino Uno",
+    "Protoboard",
+    "Jumpers",
+    "[SUBSTITUA pelos materiais reais]"
+  ],
+  "metodologia": [
+    "[SUBSTITUA] Passo 1",
+    "[SUBSTITUA] Passo 2"
+  ]
+}

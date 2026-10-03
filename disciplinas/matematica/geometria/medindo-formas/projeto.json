@@ -1,0 +1,27 @@
+{
+  "demonstracao": true,
+  "titulo": "Medindo formas com Arduino",
+  "resumo": "Sensor ultrassônico para medir lados e calcular áreas.",
+  "descricao": "[EXEMPLO FICTÍCIO] Sensor ultrassônico para medir lados e calcular áreas.",
+  "objetivo": "[SUBSTITUA] Descreva o objetivo de aprendizagem.",
+  "materiais": [
+    "Placa Arduino Uno",
+    "Protoboard",
+    "Jumpers",
+    "[SUBSTITUA pelos materiais reais]"
+  ],
+  "metodologia": [
+    "[SUBSTITUA] Passo 1",
+    "[SUBSTITUA] Passo 2"
+  ],
+  "codigo": "codigo.ino",
+  "videos": [],
+  "imagens": [],
+  "arquivos": [
+    {
+      "nome": "Código (.ino)",
+      "arquivo": "codigo.ino"
+    }
+  ],
+  "informacoes": "Campos como imagens, videos e arquivos são opcionais."
+}

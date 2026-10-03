@@ -1,0 +1,118 @@
+/* =====================================================================
+   TODAS AS CORES E FONTES DO SITE ESTÃO AQUI. Para mudar uma cor, altere
+   somente o valor abaixo: o site inteiro acompanha.
+   ===================================================================== */
+:root{
+ /* --- PALETA BASE DO PROJETO --- */
+ --azul-escuro:#041155;
+ --azul:#1f62d4;
+ --azul-esverdeado:#11839a;
+ --turquesa:#00e9c5;
+ --verde-claro:#9affed;
+
+ /* --- BRANCO E PRETO --- */
+ --branco:#ffffff;
+ --preto:#000000;
+
+ /* --- DERIVADAS DA PALETA (variações das cores base) --- */
+ --petroleo:#006476f7;        /* azul-esverdeado mais escuro: cartão da personagem (com leve transparência) */
+ --azul-claro-2:#8adad1;        /* azul bem claro: fundo da seção "Sobre" */
+ --azul-claro:#b0feed;      /* azul claro um pouco mais forte: lema "Aprender é cultivar" */
+ --azul-noite:#0b1b2b;        /* quase azul-escuro: fundo dos blocos de código */
+ --verde-codigo:#d8f7ee;      /* tom do verde-claro para o texto dos códigos */
+
+ /* --- NEUTROS --- */
+ --fundo:#fcfff6;             /* fundo geral das páginas */
+ --texto:#25324a;             /* texto principal */
+ --texto-suave:#5a6678;       /* texto secundário */
+ --borda:#157386ac;             /* bordas e linhas */
+ --neutro-verde:#ebedffc0;      /* fundo do espaço da personagem */
+ --neutro-claro:#eeeef3;      /* fundo dos ícones de passos */
+ --card-padrao:#eaeff2;       /* cor de card de disciplina quando não definida em config.js */
+
+ /* --- FONTES --- */
+ --fonte-titulo:'Oswald',sans-serif;
+ --fonte-texto:'Crimson Pro',Georgia,serif;
+
+ --raio:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;padding-bottom:40px;background-color:var(--fundo);background-size:cover;background-attachment:fixed;color:var(--texto);font:20px/1.65 var(--fonte-texto)}
+h1,h2,h3{font-family:var(--fonte-titulo);color:var(--azul-escuro);line-height:1.1;margin:0 0 .5em;font-weight:500}
+h1{font-size:clamp(2.6rem,6vw,4.6rem)} h2{font-size:clamp(1.9rem,4vw,2.8rem)} h3{font-size:1.5rem}
+a{color:var(--azul)} img{max-width:100%}
+:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.secao{padding:64px 0}
+.rotulo{font:600 .8rem var(--fonte-titulo);letter-spacing:.14em;text-transform:uppercase;color:var(--azul-esverdeado);margin:0 0 .8rem}
+.aviso{font-size:.9rem;color:var(--texto-suave);border-left:3px solid var(--turquesa);padding-left:10px}
+/* botões */
+.btn{display:inline-flex;gap:10px;align-items:center;font:500 1.05rem var(--fonte-titulo);padding:14px 26px;border-radius:8px;text-decoration:none;background:var(--azul-escuro);color:var(--branco);border:2px solid var(--azul-escuro)}
+.btn:hover{background:var(--azul)}
+.btn.sec{background:transparent;color:var(--azul-escuro)} .btn.sec:hover{background:var(--verde-claro)}
+/* cabeçalho */
+.topo{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--fundo) 96%,transparent);border-bottom:1px solid var(--borda)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:96px;flex-wrap:wrap}
+.logo img{height:72px;display:block} /* TAMANHO DA LOGO NO CABEÇALHO */
+.logo-texto{font:600 1.5rem var(--fonte-titulo);color:var(--azul-esverdeado)}
+.nav{display:flex;gap:28px} .nav a{font:500 1.05rem var(--fonte-titulo);color:var(--azul-escuro);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current]{border-color:var(--azul-esverdeado);color:var(--azul-esverdeado)}
+/* home: abertura */
+.abertura .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;padding-top:56px;padding-bottom:56px}
+.abertura h1 span{color:var(--azul-esverdeado)}
+.acoes{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:28px 0}
+.palco{background-color:var(--petroleo);background-size:cover;background-position:center;border-radius:var(--raio) var(--raio) 90px var(--raio);padding:28px;color:var(--branco);display:grid;gap:20px}
+/* LOGO GRANDE DA HOMEPAGE (acima do título) — ajuste a altura aqui */
+.logo-hero img{height:clamp(150px,24vw,260px);display:block;margin-bottom:32px}
+.palco h2{color:var(--branco);font-size:1.9rem;margin:0}
+.slot-personagem{display:flex;align-items:center;justify-content:center;text-align:center;background-color:var(--neutro-verde);color:var(--texto-suave);border-radius:12px;font-size:.95rem;background-size:cover;background-position:center} /* cor = fundo padrão; a imagem vem de js/config.js */
+.slot-personagem img{width:100%;height:100%;object-fit:contain}
+.slot-personagem.grande{min-height:300px}
+/* disciplinas: scroll horizontal */
+.cab-faixa{display:flex;justify-content:space-between;align-items:end;gap:16px}
+.setas button{width:48px;height:48px;border-radius:50%;border:1px solid var(--borda);background:var(--branco);color:var(--azul-escuro);font-size:1.3rem;cursor:pointer;margin-left:8px}
+.setas button:hover{background:var(--verde-claro)}
+.faixa{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:24px 0 14px;-webkit-overflow-scrolling:touch}
+.card{flex:0 0 240px;scroll-snap-align:start;border:1px solid var(--borda);border-radius:var(--raio);padding:26px;text-decoration:none;color:var(--azul-escuro);background:var(--cor,var(--card-padrao));display:flex;flex-direction:column;gap:46px}
+.card:hover{border-color:var(--azul-esverdeado);box-shadow:0 0 0 2px var(--azul-esverdeado) inset}
+.card .icone{width:54px;height:54px;border-radius:12px;background:var(--branco);display:grid;place-items:center;font-size:1.6rem;color:var(--azul-esverdeado)}
+.card h3{margin:0}.card small{display:flex;justify-content:space-between;color:var(--texto-suave);font-size:1rem}
+.dica{display:flex;justify-content:space-between;color:var(--texto-suave);font-size:.95rem}
+/* passos */
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.passo{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--borda)}
+.passo .icone{width:56px;height:56px;border-radius:12px;background:var(--neutro-claro);border:1px solid var(--borda);display:grid;place-items:center;font-size:1.5rem;color:var(--azul-esverdeado)}
+.passo h3{margin:0 0 4px}.passo p{margin:0}
+/* sobre */
+.sobre{display:grid;grid-template-columns:.9fr 1.4fr;background:var(--azul-claro);border:1px solid var(--borda);border-radius:var(--raio);overflow:hidden}
+.sobre .lema{background:var(--azul-claro-2);display:grid;place-items:center;padding:40px;text-align:center;font:400 2.4rem/1.1 var(--fonte-titulo);color:var(--azul-escuro)}
+.sobre>div:last-child{padding:44px}
+/* páginas internas */
+.migalhas{padding:22px 0 0;font-size:.95rem;color:var(--texto-suave)} .migalhas a{color:var(--azul-escuro)} .migalhas span{margin:0 6px}
+.voltar{display:inline-block;margin:14px 0;font:500 1rem var(--fonte-titulo);color:var(--azul-escuro);text-decoration:none;border:1.5px solid var(--azul-escuro);padding:8px 18px;border-radius:8px}
+.voltar:hover{background:var(--verde-claro)}
+.cab-pagina{display:grid;grid-template-columns:1fr 200px;gap:32px;align-items:center;padding:20px 0 40px}
+.slot-personagem.pequeno{width:200px;height:200px} /* TAMANHO PADRÃO DA PERSONAGEM nas páginas internas */
+/* pastas */
+.pasta{margin:0 0 36px;position:relative;padding-top:34px}
+.pasta>h2{position:absolute;top:0;left:0;margin:0;font-size:1.25rem;background:var(--azul-esverdeado);color:var(--branco);padding:6px 20px 4px;border-radius:12px 12px 0 0}
+.pasta>div{background:var(--branco);border:2px solid var(--azul-esverdeado);border-radius:0 var(--raio) var(--raio) var(--raio);padding:20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.projeto-link{display:block;text-decoration:none;color:var(--azul-escuro);background:var(--fundo);border:1px solid var(--borda);border-left:6px solid var(--turquesa);border-radius:10px;padding:16px}
+.projeto-link:hover{background:var(--verde-claro)} .projeto-link h3{margin:0 0 4px;font-size:1.25rem} .projeto-link p{margin:0;font-size:1rem}
+.vazio{color:var(--texto-suave);margin:0}
+/* conteúdo do projeto */
+.bloco{background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);padding:28px;margin-bottom:22px}
+.bloco ul,.bloco ol{padding-left:22px}
+.galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.galeria figure{margin:0}.galeria img{width:100%;border-radius:10px}.galeria figcaption{font-size:.9rem;color:var(--texto-suave)}
+.video{position:relative;aspect-ratio:16/9;margin-bottom:12px}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:10px}
+pre{background:var(--azul-noite);color:var(--verde-codigo);padding:18px;border-radius:10px;overflow:auto;font-size:.9rem;line-height:1.5}
+/* celular/tablet */
+@media(max-width:860px){
+ .abertura .wrap,.duas,.sobre{grid-template-columns:1fr} .secao{padding:44px 0}
+ .logo img{height:60px} .nav{gap:18px;width:100%;justify-content:space-between;padding-bottom:8px} .topo .wrap{min-height:0;padding-top:10px}
+ .cab-pagina{grid-template-columns:1fr} .slot-personagem.pequeno{order:-1;justify-self:start}
+ .setas{display:none} .card{flex-basis:78%} .sobre>div:last-child{padding:28px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

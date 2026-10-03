@@ -1,0 +1,17 @@
+{
+  "demonstracao": true,
+  "titulo": "Monitor de umidade do solo",
+  "resumo": "Acompanhar a umidade de uma planta.",
+  "descricao": "[EXEMPLO FICTÍCIO] Acompanhar a umidade de uma planta.",
+  "objetivo": "[SUBSTITUA] Descreva o objetivo de aprendizagem.",
+  "materiais": [
+    "Placa Arduino Uno",
+    "Protoboard",
+    "Jumpers",
+    "[SUBSTITUA pelos materiais reais]"
+  ],
+  "metodologia": [
+    "[SUBSTITUA] Passo 1",
+    "[SUBSTITUA] Passo 2"
+  ]
+}

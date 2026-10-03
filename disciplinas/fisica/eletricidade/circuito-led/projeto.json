@@ -1,0 +1,17 @@
+{
+  "demonstracao": true,
+  "titulo": "Circuito com LED",
+  "resumo": "Montar um circuito simples e relacionar tensão e corrente.",
+  "descricao": "[EXEMPLO FICTÍCIO] Montar um circuito simples e relacionar tensão e corrente.",
+  "objetivo": "[SUBSTITUA] Descreva o objetivo de aprendizagem.",
+  "materiais": [
+    "Placa Arduino Uno",
+    "Protoboard",
+    "Jumpers",
+    "[SUBSTITUA pelos materiais reais]"
+  ],
+  "metodologia": [
+    "[SUBSTITUA] Passo 1",
+    "[SUBSTITUA] Passo 2"
+  ]
+}
